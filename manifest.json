@@ -1,0 +1,24 @@
+{
+  "name": "backend",
+  "vendor": "coopsp",
+  "version": "0.0.3",
+  "title": "Service Example",
+  "description": "Reference app for VTEX IO Services",
+  "mustUpdateAt": "2018-01-04",
+  "credentialType": "absolute",
+  "categories": [],
+  "dependencies": {},
+  "builders": {
+    "node": "6.x"
+  },
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "channels.instaleap.io",
+        "path": "/*"
+      }
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
